@@ -8,15 +8,13 @@
 
 .header_menu{
   display: flex;
-  justify-self: center;
-  padding-right: 38px; 
+  justify-self: start;
 }
 
 .header__links-list{
   display: flex;
   gap: 32px;
   text-underline-offset: 4px;
-  
 }
 
 .header__links-list-item_no-bullit{
@@ -27,21 +25,31 @@
   list-style: circle;
 }
 
+.header__link_active{
+  text-decoration: none;
+}
+
 .header_logo{
-  display: block;
   justify-self: center;
+}
+
+.header_logo_image{
+  display: block;
   width: 148px;
   height: 105px;
 }
 
 .address{
   max-width: 240px;
-  line-height: 24px;
-  justify-self: end;
-  padding-right: 50px;
+  width: 100%;
+  line-height: 24.3px;
   font-style: normal;
   text-underline-offset: 4px;
   white-space: nowrap;
+}
+
+.header__address{
+  justify-self: end;
 }
 
 .cover{
@@ -126,6 +134,7 @@
   display: flex;
   gap: 25px;
   list-style: none; 
+  flex-wrap: wrap;
 }
 
 .lots__card-list-item{
@@ -167,7 +176,6 @@
   background-image: url(../images/card-lot-01.jpg);
 }
 
-
 .card_type_book{
   background-image: url(../images/card-lot-02.jpg);
 }
@@ -181,4 +189,92 @@
   font-size: 20px;
   padding: 30px 102px 0px 40px;
   text-underline-offset: 4px;
+}
+
+.about{
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  padding: 120px 24px 0 24px;
+  gap: 25px;
+  
+}
+
+.about_column{
+  justify-self: center;
+}
+
+.about__logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:black;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  margin-top: 35px; 
+}
+
+.about__logo-image{
+  width: 148px;
+  height: 114px; 
+}
+
+.about__title{
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: 136px;
+  margin-bottom: 100px; 
+}
+
+.about__text{
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 18px;
+  padding: 180px 50px 82px 50px;
+}
+
+.footer_address{
+  justify-self: start; 
+}
+
+.footer_menu{
+  display: flex;
+  justify-self: center; 
+}
+
+.footer__menu-list{
+  list-style: none;
+}
+
+.footer__menu-list-item{
+  text-align: center;
+  white-space: nowrap;
+}
+
+.footer__menu-link{
+  text-underline-offset: 4px;
+}
+
+.footer__menu-link_active{
+  text-decoration: none;
+}
+
+.footer__social-list{
+  display: flex;
+  gap: 48px;
+  justify-self: flex-end;
+}
+
+.footer__social-list-item{
+  list-style: none;
+}
+
+.footer__social-icon{
+  font-weight: 48px;
+  height: 48px;
 }
